@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	font-size: 16px;
+}
+
+.header h1 {
+	font-size: 1.75em;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+.row {
+	width: 100%;
+	padding: 0 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.col-content {
+	background-color: #FFEFCE;
+	padding: 30px 30px;
+	width: 90%;
+	border: 1px solid black;
+	position: relative;
+	margin: 0 auto;
+}
+
+.col-content span {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 1.25em;
+}
+
+#chicken span {
+	background-color: #E0FFDF;
+}
+
+#beef span {
+	background-color: #E0F1FF;
+}
+
+#sushi span {
+	background-color: #FF82A0;
+}
+
+/**************************** DESKTOP VIEW ***************************/
+
+@media (min-width: 992px) {
+
+	.col-lg-4 {
+	width: 33.33%;
+	float: left;
+}
+
+}
+
+/**************************** TABLET VIEW ***************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.col-md-6 {
+	width: 50%;
+	float: left;
+	margin-bottom: 40px;
+}
+
+	.col-md-12 {
+	width: 100%;
+	float: left;
+	}
+
+	#sushi {
+	width: 95%;
+	}
+
+
+}
+
+/**************************** MOBILE VIEW ***************************/
+
+@media (max-width: 767px) {
+
+	.col-content {
+		margin-bottom: 40px;
+	}
+
+}
